@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Hussin — Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio van Mohammad Hussin, student software developer. HTML, JavaScript, PHP en SQL." />
+
+  <!-- Lettertypes van Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Onze eigen opmaak -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Gloeiende ballen en raster op de achtergrond -->
+  <div class="glow-orb glow-a"></div>
+  <div class="glow-orb glow-b"></div>
+  <div class="grid-bg"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <p class="boot-line">[ SYSTEM: PORTFOLIO_v1.0 — ACCESS GRANTED ]</p>
+      <span class="hero-label">Software Developer Degree</span>
+      <h1>
+        <span class="hero-title glitch" data-text="Mohammad">Mohammad</span><br />
+        <span class="hero-title glitch" data-text="Hussin">Hussin</span>
+      </h1>
+      <p class="hero-sub">
+        Student software developer, bouwt zijn basis op, één regel code per keer.
+      </p>
+
+      <!-- Typende terminal-regel -->
+      <div class="term">
+        <span id="typed"></span><span class="cursor-blink">▊</span><br />
+        <span class="ok">&gt; user: Mohammad Hussin — beginner skill modules laden… [OK]</span>
+      </div>
+    </section>
+
+    <!-- ===== TICKER (lopende tekst) ===== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+
+    <!-- ===== PROGRAMMEERTALEN ===== -->
+    <section class="section">
+      <h2 class="sec-title">// Programming languages</h2>
+      <div class="grid grid-2" id="langGrid"></div>
+
+      <div class="card office-card">
+        <span class="sweep"></span>
+        <p class="mono small primary">[ office.suite ]</p>
+        <h3 class="big">Office 365</h3>
+        <span class="badge badge-pink">Gevorderd</span>
+      </div>
+
+      <div class="grid grid-2 mt">
+        <div>
+          <p class="chip-title">&gt; Eigenschappen</p>
+          <div class="grid grid-2" id="traitsGrid"></div>
+        </div>
+        <div>
+          <p class="chip-title">&gt; Talen</p>
+          <div class="grid grid-2" id="talenGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OVER MIJ ===== -->
+    <section class="section reveal">
+      <h2 class="sec-title">// Over mij</h2>
+      <div class="card">
+        <p class="mono small primary">$ cat about.txt</p>
+        <p class="about-text">
+          Ik ben een positief persoon die graag hard werkt en goed kan omgaan met
+          uitdagingen. Ik kijk altijd hoe ik mezelf kan verbeteren en zoek een goede
+          balans in mijn werk. Als er een probleem is, blijf ik rustig, maak ik een plan
+          en werk ik graag samen met collega's aan een oplossing. Ik ben behulpzaam en
+          denk graag mee over hoe we het werk in het team nog beter kunnen doen.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== WERKERVARING ===== -->
+    <section class="section reveal">
+      <h2 class="sec-title">// Werkervaring</h2>
+      <div class="timeline" id="werkTimeline"></div>
+    </section>
+
+    <!-- ===== ONDERWIJS ===== -->
+    <section class="section reveal">
+      <h2 class="sec-title">// Onderwijs</h2>
+      <div class="timeline" id="onderwijsTimeline"></div>
+    </section>
+
+    <!-- ===== PROJECTEN ===== -->
+    <section class="section reveal">
+      <h2 class="sec-title">// Projecten</h2>
+      <div class="grid grid-2" id="projectGrid"></div>
+    </section>
+
+    <!-- ===== HOBBY'S ===== -->
+    <section class="section reveal">
+      <h2 class="sec-title">// Hobby's</h2>
+      <div class="grid grid-3" id="hobbyGrid"></div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section reveal">
+      <h2 class="sec-title">// Contact</h2>
+      <div class="grid grid-3" id="contactGrid"></div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>© <span id="year"></span> Mohammad Hussin</p>
+      <p class="footer-sub">[ connection: secure — status: learning ]</p>
+    </footer>
+
+  </main>
+
+  <!-- Onze JavaScript (effecten en inhoud) -->
+  <script src="script.js"></script>
+</body>
+</html>

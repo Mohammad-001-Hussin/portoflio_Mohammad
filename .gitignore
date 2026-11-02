@@ -1,0 +1,13 @@
+# Besturingssysteem bestanden
+.DS_Store
+Thumbs.db
+
+# Editor mappen
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node (voor als je later npm gebruikt)
+node_modules/
