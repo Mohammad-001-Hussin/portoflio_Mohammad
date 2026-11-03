@@ -465,3 +465,56 @@ h1 {
               transform 0.7s cubic-bezier(0.2, 0.7, 0.3, 1);
 }
 .reveal.reveal-in { opacity: 1; transform: none; }
+
+/* ==========================================================================
+   Mobiel (telefoons) — zorgt dat alles netjes binnen het scherm past
+   ========================================================================== */
+
+/* Veiligheidsregel: niets mag horizontaal buiten het scherm steken */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 640px) {
+  /* Titel kleiner zodat "Mohammad" helemaal past, en netjes afbreken */
+  h1 {
+    font-size: clamp(2.2rem, 13vw, 3.5rem);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* Hero compacter: minder ruimte boven en aan de zijkanten */
+  .hero {
+    padding: 64px 16px 48px;
+  }
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  /* Secties smallere zijranden op mobiel */
+  .section {
+    padding: 40px 16px;
+  }
+
+  /* Kaartjes minder binnenruimte zodat ze niet te breed worden */
+  .card {
+    padding: 24px;
+  }
+
+  /* Grote tekst in kaartjes iets kleiner */
+  .lang-name {
+    font-size: 2rem;
+  }
+  .big {
+    font-size: 1.8rem;
+  }
+
+  /* Terminal-blok: kleine tekst mag afbreken i.p.v. buiten beeld lopen */
+  .term {
+    font-size: 0.72rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
