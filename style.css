@@ -477,12 +477,20 @@ html, body {
 }
 
 @media (max-width: 640px) {
-  /* Titel kleiner zodat "Mohammad" helemaal past, en netjes afbreken */
+  /* Titel kleiner zodat de volledige naam "Mohammad" binnen het scherm past.
+     10vw op een telefoon van ~390px = ~39px per eenheid; het woord Mohammad
+     past daarmee ruim binnen de breedte, met wat marge aan beide kanten. */
   h1 {
-    font-size: clamp(2.2rem, 13vw, 3.5rem);
-    overflow-wrap: break-word;
-    word-break: break-word;
-    hyphens: auto;
+    font-size: 9vw;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  /* Glitch-lagen op mobiel niet laten verschuiven, zodat er nooit
+     een stukje letter buiten het scherm steekt */
+  .glitch::before,
+  .glitch::after {
+    display: none;
   }
 
   /* Hero compacter: minder ruimte boven en aan de zijkanten */
